@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<title>CSS Template-VM</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Mendoza Lopez Dulce Vanessa">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="src/img/vm.jpeg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>PORTFOLIO</b></h4>
+    <p class="w3-text-grey">Template by W3.CSS</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>SOBRE MÍ</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACTO</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="src/img/vm.jpeg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>Mi Portafolio</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filtro:</span> 
+      <button class="w3-button w3-black">Home</button>
+      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Aficiones</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Trayectoria</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Personal</button>
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="src/mio/yo.jpg" alt="podio" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Concursos</b></p>
+        <p>Desde que era niña me gusta mucho participar en concursos de oratoria, declamación y debate.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="src/mio/alumnos.jpg" alt="alumnos" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Verbum Debate</b></p>
+        <p>Del 2016 al 2020 fui profesora de debate en la EST 88.Estos son algunos de mis alumnos.
+            En 2019 quedaron subcampeones nacionales del Torneo Nacional de Debate de Escuelas Secundarias.
+        </p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="src/mio/occasio.jpg" alt="occasio" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Occasio Comunicación A.C.</b></p>
+        <p>Desde el 2017 pertenezco a una Asociación Civil dedicada a la educación en el Debate.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="src/mio/chile.jpg" alt="chile" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>CMUDE</b></p>
+        <p>En 2018 viaje a Chile para participar en el Campeonato Mundial Universitario de Debate en Español.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="src/mio/sdi.jpg" alt="sdi" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Sociedad de Debate ITESO</b></p>
+        <p>Funde la Sociedad de Debate ITESO entre el 2017-2018 y fui su presidenta hasta el 2019.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="src/mio/juicio.jpg" alt="juicio" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lógica y Argumentación</b></p>
+        <p>Derivado de mi pasión por el debate, me gusta participar en simulaciones de juicio orales.</p>
+      </div>
+    </div>
+  </div>
+  
+    <!-- Third Photo Grid-->
+    <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="src/mio/perros.jpg" alt="foster" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Perros</b></p>
+            <p>Tengo 3 perros de distintas edades y razas.<br>
+            Irónicamente me dan miedo los perros y me gustan más los gatos.
+        </p>
+          </div>
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="src/mio/foster.jpg" alt="foster" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Foster</b></p>
+            <p>Foster es un Schnauzer, tiene 13 años conmigo.</p>
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <img src="src/mio/bella.jpg" alt="bella" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Bella</b></p>
+            <p>Bella es una labrador que hace 6 años es mi compañía.</p>
+          </div>
+        </div>
+      </div>
+
+    <!-- Fourth Photo Grid-->
+    <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="src/mio/keanny.jpg" alt="keanny" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Keanny</b></p>
+            <p>Keanny es un husky que tiene 1 año y 5 meses.</p>
+          </div>
+        </div>
+      </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+  <!-- Imagenes de mí -->
+  <div class="w3-row-padding w3-padding-16" id="about">
+    <div class="w3-col m6">
+      <img src="src/img/vm.jpeg" alt="Me" style="width:90%">
+    </div>
+    <div class="w3-col m6">
+      <img src="src/img/dl.jpg" alt="Me" style="width:90%">
+    </div>
+  </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>Acerca de mí</b></h4>
+    <p>Mi nombre es Vanessa Mendoza, soy estudiante de la Licenciatura en Derecho en ITESO y de
+        Técnico Superior Universitario en Tecnologías de la Información área Entornos Virtuales y  
+        Negocios Digiales en la Universidad Tecnológica de Jalisco. 
+        Me interesa el derecho informático, el diseño web y la propiedad intelectual.<br><br>
+        Abogada por equivocación,<br> 
+        Ingeniera por decisión,<br> 
+        Profesora por vocación.</p>
+    <hr>
+    
+    <h4>Herramientas Porfesionales</h4>
+    <!-- Progress bars / Skills -->
+    <p>Asesoría Legal</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:70%">70%</div>
+    </div>
+    <p>Diseño Web</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:35%">35%</div>
+    </div>
+    <p>Diseño Digital</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:25%">25%</div>
+    </div>
+    <p>
+      <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+        <i class="fa fa-download w3-margin-right"></i>Download Resume
+      </button>
+    </p>
+    <hr>
+    
+    <h4>Sobre las herramientas</h4>
+    <!-- Pricing Tables -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-black w3-xlarge w3-padding-32">Asesoría Legal</li>
+          <li class="w3-padding-16">Propiedad Intelectual</li>
+          <li class="w3-padding-16">Derechos de Autor</li>
+          <li class="w3-padding-16">Redacción de Contratos</li>
+        </ul>
+      </div>
+      
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-teal w3-xlarge w3-padding-32">Diseño Web</li>
+          <li class="w3-padding-16">HTML 5</li>
+          <li class="w3-padding-16">CSS</li>
+          <li class="w3-padding-16">JavaScript</li>
+          <li class="w3-padding-16">Bootstrap</li>
+        </ul>
+      </div>
+      
+      <div class="w3-third">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-black w3-xlarge w3-padding-32">Diseño Digital</li>
+          <li class="w3-padding-16">InkScape</li>
+          <li class="w3-padding-16">Gimp</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contactame</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>mendoza.vanessa.d@gmail.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Jalisco, MX</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>333-493-8683</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Nombre</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Mensaje</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Enviar</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>Template</h3>
+      <p>Todos los Derechos Reservados.</p>
+      <p>Hecho con <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+
+    <div class="w3-third">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Diseño Digital</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Diseño Web</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Consulta Legal</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Innovación</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Derechos de Autor</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Propiedad Intelectual</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ingeniería Legal</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ingeniería</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Derecho</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Tecnología</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Abogados</span> 
+      </p>
+    </div>
+
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Hecho con <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
